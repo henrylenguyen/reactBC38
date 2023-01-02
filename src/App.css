@@ -1,0 +1,11 @@
+.Header .container a.nav-link {
+  color: #fff;
+}
+
+.card .card-header {
+  min-height: 300px;
+  line-height: 300px;
+}
+.card .card-header span{
+  font-size: 20px;
+}
