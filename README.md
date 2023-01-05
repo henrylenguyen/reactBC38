@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Bài 2: Chọn lựa kính áp dụng State
+## Mô tả:
+ - Bài làm được phân tách theo nhiều component và áp dụng cả props
+ - Chuyển state và setState sang useState
+ 
+ ## Công thức của useState: 
+ ```
+const [state, setState] = useState(initial value)
+```
+Trong đó: 
+  - **state** và **setState**ó thể đặt tên bất kì, ví dụ: car,setCar....
+  - **setState** là 1 callback sẽ làm thay đổi state ban đầu
+  - **initial value** là giá trị khởi tạo, nó là giá trị ban đầu được gán vào **state** khi render lần đâu.
+      **Initial value** có thể là number,object,string,array,... hoặc 1 function, nếu là function nó sẽ nhận giá trị khởi tạo là giá trị trả về của function đó **(return)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ useState ngắn gọn hơn state thông thường, nhưng nó chỉ được áp dụng bởi function component
+ 
+ 
+ ## Demo về sản phẩm:
+ ![image](https://user-images.githubusercontent.com/114068860/210735113-84e31da4-fb34-4cf0-8180-d96b0206a4b5.png)
+### Mô tả:
+ - Bạn chọn những Mắt Kính ở phía dưới sẽ được update tự động qua hình bên trái
+ - Bao gồm: giá sản phẩm, hình sản phẩm, chi tiết sản phẩm, tên sản phẩm
+ - Bạn rê chuột vào hình sản phẩm mới xem được chi tiết.
