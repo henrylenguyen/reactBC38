@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './BaiTapLayoutComponent/Home';
+import "./App.css";
+import Layout from "./ChooseGlasses/Layout";
 function App() {
   return (
-    <div className="App">
-     <Home></Home>
+    <div
+      className="App"
+      style={{
+        background: "rgba(0, 0, 0, 0.5)",
+      }}
+    >
+      <Layout></Layout>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgb(10 10 10 / 65%);
+  padding: 2rem;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
