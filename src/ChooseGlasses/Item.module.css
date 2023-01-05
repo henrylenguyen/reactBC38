@@ -1,21 +1,35 @@
 .item {
   position: relative;
+  overflow: hidden;
 }
-.item__text{
+
+.item:hover .item__text {
+  transform: translateY(0);
+
+}
+
+.item__text {
   position: absolute;
   bottom: 0;
   background: #F8AC7A;
   border-bottom: 5px solid #BE7E4F;
+  padding: 1rem;
+  transition: all 0.5s linear;
+  transition-delay: 0.1s;
+  transform: translateY(100%);
 }
-.item__desc{
+
+.item__desc {
   color: #Fff;
   font-size: 1.3rem;
 }
-.item__name{
+
+.item__name {
   color: #9566B7;
   font-size: 2rem;
   text-transform: uppercase;
 }
+
 .item__list {
   max-width: 80rem;
   margin: 10rem auto;
@@ -27,16 +41,23 @@
   align-items: center;
   width: 700px;
 }
-.item__style{
-     position: absolute;
-     width: 100%;
-     top: 20%;
-     left: 50%;
-     transform: translate(-23%, -20%);
+
+.item__style {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-28%, 35%);
 }
-.item__style_img{
-  width: 110px;
+
+.item__style_img {
+  width: 140px;
 }
+
 img {
   width: 250px;
+}
+
+.item__price {
+  color: #6A5AF9;
 }

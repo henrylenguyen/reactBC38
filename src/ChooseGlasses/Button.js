@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styleGlasses from "./Glasses.module.css";
-
-class Button extends Component {
-  render() {
-    return (
-        <button className={styleGlasses.glasses__button}>
-          <img src={this.props.image} alt="" className={styleGlasses.button__image} />
-        </button>
- 
-    );
-  }
-}
+const Button = (props) => {
+  // console.log(props);
+  return (
+     <button className={styleGlasses.glasses__button}>
+        <img
+          src={props.image}
+          alt=""
+          className={styleGlasses.button__image}
+          onClick={props.onClick}
+        />
+      </button>
+  );
+};
 
 export default Button;

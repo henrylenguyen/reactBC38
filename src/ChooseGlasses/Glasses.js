@@ -2,11 +2,23 @@ import React from "react";
 import styleGlasses from "./Glasses.module.css";
 import { Data } from "../Data";
 import Button from "./Button";
-const Glasses = () => {
+
+const Glasses = (props) => {
+  // console.log(props);
+  // function log(value){
+  //   console.log(value);
+  // }
   return (
     <div className={styleGlasses.glasses}>
-      {Data.map((item) => (
-       <Button key={item.id} image={item.url}></Button>
+    {/* Nhấn vào mỗi nút thì sẽ nhận tương ứng với giá trị id của nó */}
+      {Data.map((item, index) => (
+        <Button
+          key={item.id}
+          image={item.url}
+          onClick={()=>{
+            props.onClick(item)
+          }}
+        ></Button>
       ))}
     </div>
   );
