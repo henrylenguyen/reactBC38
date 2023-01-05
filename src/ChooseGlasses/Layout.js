@@ -40,7 +40,7 @@ const Layout = () => {
             <div className={stylesItem.item__text}>
               <h4 className={stylesItem.item__name}>{state.name}</h4>
               <p className={stylesItem.item__desc}>{state.desc}</p>
-              <span className={stylesItem.item__price}>Price: {state.price}</span>
+              <span className={stylesItem.item__price}>Price: {state.price} $</span>
             </div>
           </Item>
           <Item></Item>
