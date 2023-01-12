@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './BaiTapLayoutComponent/Home';
+import Home from "./Components/Home/Home";
+import "./style.css"
 function App() {
   return (
     <div className="App">
